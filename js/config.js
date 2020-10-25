@@ -7,4 +7,7 @@ window._config = {
     api: {
         invokeUrl: 'https://orf3hhfvf4.execute-api.us-east-1.amazonaws.com/prod' // e.g. https://rc7nyt4tql.execute-api.us-west-2.amazonaws.com/prod',
     }
+	cors: {
+		var corsAttr = new EnableCorsAttribute("*", "*", "*"),
+		config.EnableCors(corsAttr)
 };
